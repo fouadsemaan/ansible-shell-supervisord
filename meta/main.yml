@@ -1,0 +1,30 @@
+---
+galaxy_info:
+  author: Fouad Semaan
+  description: installs supervisord conf for shell script running in nohup 
+  company: BlackRock
+  license:
+    - MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: MacOSX
+      versions:
+        - all
+  galaxy_tags:
+    - development
+
+dependencies: 
+  - role: andrewrothstein.supervisord-program
+    version: v1.0.3
+    supervisord_program_name: shell 
+    supervisord_program_command: /usr/local/bin/{{shell_supervisord_file}}
+    supervisord_username: '{{jupyter_supervisord_username}}' 
