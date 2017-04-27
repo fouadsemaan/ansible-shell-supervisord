@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+source activate {{shell_supervisord_env}}
+
+{% for env_file in shell_supervisord_env_files|default([]) %}
+source {{env_file}}
+{% endfor %}
+
+nohup /usr/local/bin/{{shell_supervisord_file}}

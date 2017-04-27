@@ -1,0 +1,3 @@
+---
+#shell_supervisord_file: shell.sh
+#shell_supervisord_env: myshellenv

@@ -1,0 +1,10 @@
+---
+- name: resolve shell run script
+  become: yes
+  become_user: root
+  with_items:
+    - usr/local/bin/{{shell_supervisord_file}}
+  template: >
+    src={{item}}.j2
+    dest=/{{item}}
+    mode=0755
