@@ -3,7 +3,7 @@
   become: yes
   become_user: root
   with_items:
-    - usr/local/bin/{{shell_supervisord_file}}
+    - usr/local/bin/run-shell.sh
   template: >
     src={{item}}.j2
     dest=/{{item}}
