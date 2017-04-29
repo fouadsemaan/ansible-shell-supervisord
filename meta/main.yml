@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Fouad Semaan
-  description: installs supervisord conf for shell script running in nohup 
+  description: installs supervisord conf for shell script 
   company: BlackRock
   license:
     - MIT
