@@ -1,7 +1,7 @@
 fouadsemaan.shell-supervisord
 =========
 
-A brief description of the username.rolename goes here.
+Installs a supervisord program specification for a shell script. 
 
 Requirements
 ------------
