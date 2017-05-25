@@ -27,4 +27,4 @@ dependencies:
     version: v1.0.3
     supervisord_program_name: shell 
     supervisord_program_command: /usr/local/bin/{{shell_supervisord_file}}
-    supervisord_username: '{{jupyter_supervisord_username}}' 
+    supervisord_username: '{{shell_supervisord_username}}' 
