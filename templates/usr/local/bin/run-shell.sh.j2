@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
+{% if shell_supervisord_env is defined %}  
 source activate {{shell_supervisord_env}}
+{% endif %} 
 
 {% for env_file in shell_supervisord_env_files|default([]) %}
 source {{env_file}}
